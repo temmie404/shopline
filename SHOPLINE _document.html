@@ -148,6 +148,7 @@
       color: #052855;
       margin-bottom: 24px;
       line-height: calc(5px + 2ex + 5px);
+      
     }
 
     .sec-p {
@@ -193,16 +194,24 @@
     }
 
     .left {
-      max-width: 60%;
+      max-width: 65%;
     }
 
-    .SHOPLINE-img {
+    .container {
+    position: relative; 
+}
 
-      max-width: 35%;
-      height: auto;
-      object-fit: contain;
+.SHOPLINE-img {
+    max-width: 30%;
+    height: auto;
+    object-fit: contain;
+    position: absolute;
+    right: 20px; 
+    top: 200px; /* 往上移動 50px，可自行調整 */
+}
 
-    }
+
+
 
     .bgcolor {
       background: linear-gradient(180deg, #EBF1F8 78.12%, #DBE7F4 91.15%);
@@ -5649,6 +5658,7 @@ html {
   bottom: 0;
   z-index: -1;
   width: 372px;
+
   transform: translateY(-50%);
 }
 .imt-manga-guide-content {
